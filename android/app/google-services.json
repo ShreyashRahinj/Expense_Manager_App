@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011044914551",
+    "project_id": "vexpense-4627f",
+    "storage_bucket": "vexpense-4627f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011044914551:android:683453947d25cd9f2d3d72",
+        "android_client_info": {
+          "package_name": "com.ssrappservices.vexpense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011044914551-j2it0t68lada0a1lsbf3kf68phvp1idb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_FJkmQvqHhzuY6k6IQUBoCnuCqsTEZj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011044914551-j2it0t68lada0a1lsbf3kf68phvp1idb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

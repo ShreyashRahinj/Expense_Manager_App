@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
+
+class ExpenseTile extends StatelessWidget {
+  final String name;
+  final String date;
+  final String amount;
+  final String time;
+  final void Function(BuildContext)? deleteTapped;
+
+  const ExpenseTile({
+    super.key,
+    required this.name,
+    required this.date,
+    required this.amount,
+    required this.time,
+    required this.deleteTapped,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Slidable(
+      endActionPane: ActionPane(
+        motion: const StretchMotion(),
+        children: [
+          SlidableAction(
+            onPressed: deleteTapped,
+            icon: Icons.delete,
+            backgroundColor: Colors.red,
+          )
+        ],
+      ),
+      child: ListTile(
+        title: Text(name),
+        subtitle: Text(date),
+        trailing: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('₹ $amount'),
+            Text(time),
+          ],
+        ),
+      ),
+    );
+  }
+}
